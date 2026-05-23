@@ -40,7 +40,7 @@ margin: 16px;
 padding: 8px;
 }
 
-.redes-sociais a{
+.socialmedia a{
 text-decoration: none;
 }
 
@@ -71,8 +71,9 @@ h1{
     margin-left: 16px;
 }
 
-article{
+.hero article{
     background-color: var(--cor-destaque2);
+    position: relative;
 }
 
 .hero article p{
