@@ -106,7 +106,7 @@ padding: 8px;
 header{
     display: grid;
     max-width: 1000px;
-    background-color: slategrey;
+    background-color: steelblue;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -130,7 +130,7 @@ header nav ul li{
 }
 
 header ul li a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3rem;
