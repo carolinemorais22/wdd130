@@ -1,81 +1,87 @@
-:root{
---cor-primaria: #264653;
---cor-secundaria: #fff;
---cor-destaque1: #264653; 
---cor-destaque2: #f0f0f0; 
---fonte-titulo: "Times New Roman", "Georgia", serif;
---fonte-body: Arial, Helvetica, sans-serif;
+:root {
+    --cor-primaria: #264653;
+    --cor-secundaria: #fff;
+    --cor-destaque1: #264653;
+    --cor-destaque2: #f0f0f0;
+    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-footer{
-background-color: var(--cor-primaria);
-color: var(--cor-secundaria);
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
-align-items: center;
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    align-items: center;
 }
 
-footer p{
-display: flex;
-justify-content: end;
-grid-column: 5;
-font-size: 13px;
-padding: 0;
+footer p {
+    display: flex;
+    justify-content: end;
+    grid-column: 5;
+    font-size: 13px;
+    padding: 0;
 }
 
-.socialmedia{
-grid-column: 6;
-display: flex;
-justify-content: center;
+.redes-sociais {
+    grid-column: 6;
+    display: flex;
+    justify-content: center;
 }
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-font-family: var(--fonte-body);
-color: var(--cor-destaque1);
-margin-bottom: 10px;
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+    margin-bottom: 10px;
 }
 
-header, main, footer{
-width: 840px;
-margin: 0 auto;
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
-h1, h2{
-font-family: var(--fonte-titulo);
-color: var(--cor-primaria);
-text-align: center;
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
 }
 
-nav, p, section, article{
-margin: 16px;
-padding: 8px;
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
-.socialmedia a{
+.redes-sociais a {
     text-decoration: none;
     font-size: 0;
     padding: 0;
-    width: 60px;
+    width: 60%;
     margin: 10px;
 }
 
-.hero{
+.hero {
     position: relative;
 }
 
-.hero img{
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1{
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -86,24 +92,24 @@ padding: 8px;
     color: #fff;
 }
 
-.hero article img{
+.hero article img {
     float: right;
     width: 120px;
     margin-left: 16px;
 }
 
-.hero article{
+.hero article {
     background-color: var(--cor-destaque2);
     position: absolute;
     top: 100px;
     margin: 100px 50px 100px 50px;
 }
 
-.hero article p{
+.hero article p {
     position: relative;
 }
 
-header{
+header {
     display: grid;
     max-width: 1000px;
     background-color: rgba(45, 95, 136, 0.507);
@@ -111,12 +117,12 @@ header{
     margin-bottom: 10px;
 }
 
-header nav{
+header nav {
     padding: 1rem;
     grid-column: 4;
 }
 
-header ul{
+header ul {
     justify-content: space-between;
     gap: 10px;
     display: flex;
@@ -124,31 +130,31 @@ header ul{
     list-style: none;
 }
 
-header nav ul li{
+header nav ul li {
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 6px;
     background-color: rgb(44, 44, 104);
 }
 
-header ul li a{
+header ul li a {
     color: #fff;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3rem;
 }
 
-header img{
+header img {
     margin: 10px 70px;
     grid-column: 2;
     width: 30%;
 }
 
-section{
+section {
     background-color: #f0f0f0;
 }
 
-.section2{
+.section2 {
     padding: 20px;
     margin: 0 0 20px 0;
 }
@@ -158,20 +164,20 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-figure{
+figure {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
 
-figure img{
+figure img {
     width: 70%;
     margin: 10px;
-    
+
 }
 
-.section1{
+.section1 {
     padding: 20px;
     margin: 10px 0 20px 0;
 }
@@ -179,13 +185,13 @@ figure img{
 .grid-history {
     display: grid;
     gap: 8px 20px;
-    
-    grid-template-columns: repeat(3, 1fr); 
-    
-    grid-template-areas: 
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas:
         "header header header"
         "esquerdo imagem direito";
-        
+
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
@@ -216,5 +222,121 @@ figure img{
 .text-right {
     grid-area: direito;
     text-align: justify;
+    margin-top: 20px;
+}
+
+/********************************************* Contato ********************************************************/
+.grid-contato {
+    display: grid;
+    gap: 8px 25px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas:
+        "header header"
+        "esquerdo direito";
+
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.left {
+    grid-area: esquerdo;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.left h3{
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.right {
+    grid-area: direito;
+    text-align: justify;
+}
+
+.right h3 {
+    margin-left: 18px;
+}
+
+.contato p {
+    padding: 3px;
+    margin: 5px 18px;
+    font-size: 13px;
+    font-family: var(--fonte-body);
+}
+
+.contato {
+    margin: 0 0 10px 0;
+}
+
+iframe {
+    margin: 10px 18px;
+    border: none;
+    width: 400px; 
+    height: 300px; 
+
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.opcao input {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+form {
+    margin-left: 20px;
+}
+
+form label {
+    font-size: 15px;
+    font-family: var(--fonte-body);
+}
+
+form button{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    resize: vertical;
+    width: 75%;
+}
+
+form button:hover {
+    background-color: #1b2a3a;
+}
+
+form textarea {
+    width: 75%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 60%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.imagens-contato {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
